@@ -1,0 +1,36 @@
+{
+	"name": "webcompro",
+	"version": "0.1.0",
+	"description": "Example block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-copy-php",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"env": "wp-env"
+	},
+	"devDependencies": {
+		"@woocommerce/dependency-extraction-webpack-plugin": "^3.0.1",
+		"@wordpress/env": "^9.10.0",
+		"@wordpress/scripts": "^27.9.0"
+	},
+	"dependencies": {
+		"@wordpress/components": "^27.6.0"
+	},
+	"files": [
+		"webcompro.php",
+		"build",
+		"readme.txt",
+		"includes",
+		"src",
+		"!vendor",
+		"!composer.json",
+		"!composer.lock"
+	]
+}
